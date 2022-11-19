@@ -11,6 +11,6 @@ This howto will help you achieving this on MacOS 11-13.
 - Pick your user and enter your password
 - At the top menu bar find the Terminal app
 - In the Terminal type ```csrutil disable``` & reboot to normal OS
-3. Now open the Terminal again and type ```systemextensionsctl list```. Note the ```teamID``` and package name. Run ```systemextensionsctl uninstall <teamId> <bundleId>``` to remove the system extention. 
+3. Now open the Terminal again and type ```systemextensionsctl list```. Note the ```teamID``` and package name (aka, ```bundleId```). Run ```systemextensionsctl uninstall <teamId> <bundleId>``` to remove the system extention. 
 4. Boot to recovery mode again and reenable SIP using ```csrutil enable``` Terminal command
 5. Boot normaly and run ```sudo rm -rf /Applications/Falcon.app``` (you may need to grant Terminal app permissions to remove apps) to clear all files remaining
